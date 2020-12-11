@@ -5,7 +5,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class Project2SD {
-    @Given("I am on login page")
+  /*    @Given("I am on login page")
     public void i_am_on_login_page() {
         System.out.println("I am on login page");
     }
@@ -25,13 +25,21 @@ public class Project2SD {
         System.out.println("I enter another valid username and valid password");
     }
 
-   /* @When("I enter username {string} and password as {string}")
+    *//*@When("I enter username {string} and password as {string}")
     public void i_enter_username_and_password_as(String username, String password) {
 
         System.out.println("I enter username:"+username);
         System.out.println("I enter password:"+password);
-    }
-*/
+    }*//*
+
+    @When("^I enter username \"([^\"]*)\" and password as \"([^\"]*)\"$")
+    public void i_enter_username_something_and_password_as_something(String username, String password) throws Throwable {
+        System.out.println("I enter username:"+username);
+        System.out.println("I enter password:"+password);
+    } // created from tidy gherkin
+
+
+
 
     @When("I click on login button")
     public void i_click_on_login_button() {
@@ -46,5 +54,5 @@ public class Project2SD {
     public void i_should_get_error_message() {
         System.out.println("I should get error message");
     }
-
+*/
 }

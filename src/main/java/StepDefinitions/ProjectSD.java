@@ -11,16 +11,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class ProjectSD {
-/*
 
-    WebDriver driver;
+
+    static WebDriver driver =HooksSD.getDriver();
 
     @Given("I am on login page")
     public void i_am_on_login_page() {
         System.out.println("I am on login page");
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
+
         driver.get("http://stock.scriptinglogic.net/");
     }
 
@@ -44,12 +42,12 @@ public class ProjectSD {
     @Then("I should be redirected to Home page")
     public void i_should_be_redirected_to_home_page() {
         System.out.println("I should be redirected to Home page");
-        String expected = "POSNIC - Dashboard";
+        String expected = "POSNIC - Dashboard1";
         String actual = driver.getTitle();
         Assert.assertEquals("We are not on the home page",expected,actual);
 
     }
-*/
+
 
 
 }
